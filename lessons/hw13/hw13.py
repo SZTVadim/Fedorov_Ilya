@@ -5,10 +5,7 @@ class TestCase:
         self.duration = duration
 
     def can_run(self):
-        if self.status == "new":
-            return True
-        else:
-            return False
+        return self.status == "new"
 
     def finish(self, result, duration):
         if self.status != "new":
@@ -24,11 +21,7 @@ class TestCase:
     def is_slow(self):
         if self.duration is None:
             return None
-
-        if self.duration >= 5:
-            return True
-        else:
-            return False
+        return self.duration >= 5
 
 
 test1 = TestCase("Login")
