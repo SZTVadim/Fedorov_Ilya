@@ -1,0 +1,13 @@
+SETUP base
+SETUP auth
+SETUP db
+SETUP bundle
+SETUP app
+SETUP logger
+TEST
+TEARDOWN logger
+TEARDOWN app
+TEARDOWN bundle
+TEARDOWN db
+TEARDOWN auth
+TEARDOWN base
