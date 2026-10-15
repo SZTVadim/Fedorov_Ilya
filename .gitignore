@@ -1,0 +1,8 @@
+
+.idea/
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+lessons/notes_api/check_auth.py
